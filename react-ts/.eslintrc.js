@@ -37,6 +37,17 @@ module.exports = {
       'import/parsers': {
         '@typescript-eslint/parser': ['.ts', '.tsx'],
       },
+      "import/extensions": [
+        "error",
+        "always",
+        {
+          ts: "never",
+          tsx: "never",
+          js: "never",
+          jsx: "never"
+        }
+      ],
+
       'import/resolver': {
         typescript: {},
       },
